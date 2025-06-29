@@ -1,4 +1,5 @@
 import sys
+# uses system arguments to get the book file path
 
 def get_book_text(filepath):
     with open(filepath) as f:
@@ -21,5 +22,6 @@ def main():
     for pair in sorted_dict:
         if pair['char'].isalpha():
             print(f"{pair['char']}: {pair['num']}")
+# this prints the number of words and characters in the book and sorts the characters by count (only including letters)
 
 main()
